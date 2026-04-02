@@ -8,7 +8,6 @@ It is designed for clean reproduction of the manuscript-linked workflow using th
 
 - `scripts_clean/` final clean scripts for the manuscript mainline analysis
 - `README.md` usage instructions
-- `.gitignore` basic Git ignore rules
 
 ## Canonical EEG network output folders
 
