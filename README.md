@@ -2,20 +2,13 @@
 
 This repository contains the final clean scripts for the NIC EEG manuscript mainline analysis.
 
-The repository is designed for clean reproduction of the manuscript-linked workflow only.  
-Original scripts, manuscript files, review materials, and local result outputs are not included.
+It is designed for clean reproduction of the manuscript-linked workflow using the final clean scripts only.
 
-## Included contents
+## Repository structure
 
-- final clean scripts
-- usage instructions
-
-## Not included
-
-- original scripts
-- manuscript files
-- reviewer files
-- local output/result files
+- `scripts_clean/` final clean scripts for the manuscript mainline analysis
+- `README.md` usage instructions
+- `.gitignore` basic Git ignore rules
 
 ## Canonical EEG network output folders
 
@@ -36,7 +29,7 @@ EEG network outputs
 → mediation  
 → figures
 
-## Scripts
+## Scripts included
 
 ### EEG network
 - `EEG_network_NeuroEPO_post_clean_main_english_prompt.R`
@@ -45,26 +38,27 @@ EEG network outputs
 - `EEG_network_Placebo_pre_clean_main_english_prompt.R`
 
 ### TopZ + GLMM
-- `05_topz_glmm_main_clean_final_new_EEG_paths.R`
+- `topz_glmm_main_clean_final_new_EEG_paths.R`
 
 ### Mediation
 - `hub_mediation_20230401_clean_TOPZ_only.R`
 
 ### Figures
-- `Figure_2_pathfixed_current_pc_v3.R`
-- `Figure_3A_pathfixed_current_pc.R`
-- `Figure_3B_pathfixed_current_pc.R`
-- `Figure_4_pathfixed_current_pc.R`
+- `Figure_1.R`
+- `Figure_2.R`
+- `Figure_3A .R`
+- `Figure_3B .R`
+- `Figure_4.R`
 
 ## Recommended running order
 
 1. Run the four EEG network scripts.
-2. Run `05_topz_glmm_main_clean_final_new_EEG_paths.R`.
+2. Run `topz_glmm_main_clean_final_new_EEG_paths.R`.
 3. Run `hub_mediation_20230401_clean_TOPZ_only.R`.
 4. Run the figure scripts.
 
 ## Notes
 
 - This repository keeps the manuscript mainline only.
-- TopZ definition, TopZ rate calculation, and GLMM settings were preserved for reproducibility.
-- Figure 1 is not included in the final clean mainline repository because Panel A depends on the classic hub branch.
+- The clean pipeline is intended to preserve the manuscript-linked analysis logic.
+- EEG network output folders should follow the canonical folder names listed above.
