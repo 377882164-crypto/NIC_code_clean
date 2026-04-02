@@ -1,4 +1,4 @@
-# NIC EEG Clean Reproduction Repository (Shell)
+# NIC EEG Clean Reproduction Repository 
 
 This is an empty repository skeleton for the NIC EEG clean project.
 
